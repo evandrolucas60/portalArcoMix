@@ -365,3 +365,8 @@ INFORMAÇÕES
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.inforBox p {
+    color: #fff;
+    text-align: justify;
+}
