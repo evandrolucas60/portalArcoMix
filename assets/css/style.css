@@ -272,27 +272,27 @@ VALORES
 }
 
 .scene:nth-child(1) .movie .poster {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/1.png);
   }
   
   .scene:nth-child(2) .poster {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/2.png);
   }
   
   .scene:nth-child(3) .poster {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/4.png);
   }
 
   .scene:nth-child(4) .poster {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/3.png);
   }
 
   .scene:nth-child(5) .poster {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/5.png);
   }
 
   .scene:nth-child(6) .poster {
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/6.png);
   }
   
   .scene:nth-child(1) .info header {
