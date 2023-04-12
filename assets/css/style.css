@@ -109,7 +109,7 @@ BANNER
 BEM-VINDO
 ************************************/
 .sec {
-    background-color: #fff;
+    background:#fff;
     padding: 100px;
     min-height: 100vh;
     display: flex;
@@ -150,12 +150,29 @@ p.hide {
 /***********************************
 VALORES
 ************************************/
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100vw;
+    margin-top: 40px;
+}
+
+.values ul
 .scene {
-    width: 260px;
+    width: 300px;
     height:  400px;
     margin: 30px;
     float: left;
     perspective: 1000px;
+    list-style: none;
 }
 
 .movie {
@@ -164,6 +181,7 @@ VALORES
     transform-style: preserve-3d;
     transform: translateZ(-130px);
     transition: transform 350ms;
+    margin-bottom: 15px;
 }
 
 .movie:hover {
@@ -219,18 +237,14 @@ VALORES
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.info header .rating {
-    border: 1px solid #fff;
-    padding: 0px 3px;
-}
-
 .info p {
     padding: 1.2em 1.4em;
-    margin:  2px 0 0;
+    margin:  200px 0 0;
     font-weight:  700;
     color: #666;
     line-height: 1.4em;
     border-top: 10px solid #555;
+    font-size: 1em;
 }
 
 .movie .poster,
@@ -262,21 +276,92 @@ VALORES
   }
   
   .scene:nth-child(2) .poster {
-    background-image: url(../img/poster02.jpg);
+    background-image: url(../img/bg.jpg);
   }
   
   .scene:nth-child(3) .poster {
-    background-image: url(../img/poster03.jpg);
+    background-image: url(../img/bg.jpg);
+  }
+
+  .scene:nth-child(4) .poster {
+    background-image: url(../img/bg.jpg);
+  }
+
+  .scene:nth-child(5) .poster {
+    background-image: url(../img/bg.jpg);
+  }
+
+  .scene:nth-child(6) .poster {
+    background-image: url(../img/bg.jpg);
   }
   
   .scene:nth-child(1) .info header {
-    background-image: url(../img/still01.jpg);
+    background-image: url(../img/espiritualidade.jpg);
+    background-size: cover;
   }
   
   .scene:nth-child(2) .info header {
-    background-image: url(../img/still02.jpg);
+    background-image: url(../img/etica.jpg);
+    background-size: cover;
   }
   
   .scene:nth-child(3) .info header {
-    background-image: url(../img/still03.jpg);
+    background-image: url(../img/familia.jpg);
+    background-size: cover;
   }
+
+  .scene:nth-child(4) .info header {
+    background-image: url(../img/inovaçã6_n.jpg);
+    background-size: cover;
+  }
+
+  .scene:nth-child(5) .info header {
+    background-image: url(../img/resultado.jpg);
+    background-size: cover;
+  }
+
+  .scene:nth-child(6) .info header {
+    background-image: url(../img/valorizaçãodocliente.jpg);
+    background-size: cover;
+  }
+
+  
+/***********************************
+INFORMAÇÕES
+************************************/
+.infor {
+    background: #000;
+    padding-top: 250px;
+    margin-top: -250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.inforBox {
+    position: relative;
+    max-width: 100vw;
+    margin-top: 40px;
+}
+
+#infor .maxw800p {
+    color: #fff;
+}
+
+.infoTex {
+    color: #fff;
+} 
+
+.inforBox h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.inforBox h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
