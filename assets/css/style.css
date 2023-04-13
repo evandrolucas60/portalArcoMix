@@ -16,65 +16,6 @@ body {
 }
 
 /***********************************
-CABELÇALHO
-************************************/
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: 0.6s;
-   
-}
-
-header.sticky {
-    padding:  5px 100px;
-    background: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-}
-
-header .logo {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: 0.6s;
-}
-
-header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li {
-    position: relative;
-    list-style: none;
-}
-
-header ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 300;
-    transition: 0.6s;
-}
-
-header.sticky ul li a {
-    color: black;
-}
-
-
-/***********************************
 BANNER
 ************************************/
 .banner {
@@ -166,7 +107,8 @@ VALORES
     display: grid;
     place-items: center;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
-    column-gap: 80px;
+    column-gap: 100px;
+    row-gap: 50px;
     max-width: 100vw;
     margin-top: 40px;
 }
@@ -376,6 +318,7 @@ INFORMAÇÕES
 
 .inforBox p {
     color: #fff;
+    text-align: justify;
 }
 
 /***********************************
