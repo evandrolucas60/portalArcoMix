@@ -177,7 +177,7 @@ VALORES
 }
 
 
-.info header {
+.info header.headerValues {
     color: #fff;
     padding: 7px 10px;
     font-weight: bold;
@@ -189,7 +189,7 @@ VALORES
 
 .info p {
     padding: 1.2em 1.4em;
-    margin:  200px 0 0;
+    margin:  10px 0 0;
     font-weight:  700;
     color: #666;
     line-height: 1.4em;
