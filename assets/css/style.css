@@ -5,11 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 1000px;
 }
 
 /***********************************
@@ -40,15 +43,8 @@ header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    color: rgba(0,0,0,.0);
     text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     transition: 0.6s;
-    background: url(../img/header-logo.png) no-repeat;
-    background-size: 70PX; 
 }
 
 header ul {
@@ -71,7 +67,6 @@ header ul li a {
     letter-spacing: 2px;
     font-weight: 300;
     transition: 0.6s;
-    font-size: 0.8em;
 }
 
 header.sticky ul li a {
@@ -95,7 +90,7 @@ BANNER
 
 .banner h2 {
     color: #fff;
-    font-size: 90px;
+    font-size: 9em;
     text-transform: uppercase;
     text-align: center;
     line-height: 1em;
@@ -111,7 +106,7 @@ BEM-VINDO
 .sec {
     background:#fff;
     padding: 100px;
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,13 +118,13 @@ BEM-VINDO
     width: 100%;
 }
 
-.maxw800p {
+.mxw800p {
     max-width: 800px;
     margin: 0 auto;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 2.6rem;
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -146,6 +141,15 @@ p.hide {
     display: none;
 }
 
+.btn { 
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
 
 /***********************************
 VALORES
@@ -157,10 +161,12 @@ VALORES
     justify-content: center;
 }
 
-.values {
+.stage {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
+    place-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    column-gap: 80px;
     max-width: 100vw;
     margin-top: 40px;
 }
@@ -169,10 +175,12 @@ VALORES
 .scene {
     width: 300px;
     height:  400px;
-    margin: 30px;
+    margin: 0 auto;
     float: left;
     perspective: 1000px;
     list-style: none;
+    margin-top: 30px;
+
 }
 
 .movie {
@@ -194,7 +202,7 @@ VALORES
     width: 260px;
     height: 400px;
     background-color: #fff;
-    backface-visibility: hidden;
+    backface-visibility: hidden;  
 }
 
 
@@ -243,8 +251,8 @@ VALORES
     font-weight:  700;
     color: #666;
     line-height: 1.4em;
-    border-top: 10px solid #555;
-    font-size: 1em;
+    border-top: 10px solid #000;
+    font-size: 12px;
 }
 
 .movie .poster,
@@ -368,5 +376,43 @@ INFORMAÇÕES
 
 .inforBox p {
     color: #fff;
-    text-align: justify;
+}
+
+/***********************************
+INFORMAÇÕES
+************************************/
+.newsBx {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.newsBx .mancht {
+    position: relative;
+    background: #4978ff;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsBx .mancht:hover {
+    background: #000;
+}
+
+.newsBx .mancht a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.newsBx .mancht:hover a {
+    color: rgba(255, 255, 255, 1);
 }
