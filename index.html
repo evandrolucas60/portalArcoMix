@@ -19,28 +19,20 @@
 
 <body>
     <!--Cabeçalho-->
-    <header class="topnav">
+    <header class="topnav" id="topnav">
         <a href="./index.html" class="logo"><img src="./assets/img/header-logo.png" alt="Arco-Mix" width="100px"></a>
-        <nav role="navigation" class="navigation">
-            <div id="menuToggle">
 
-                <input type="checkbox">
+        <ul class="menu-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#" class="zoom">Ramais</a></li>
+            <li><a href="#" class="zoom">Informações</a></li>
+            <li><a href="#" class="zoom">CPD</a></li>
+            <li><a href="#" class="zoom">Frente de Loja</a></li>
+            <li><a href="#" class="zoom">Central Colaborativa</a></li>
+        </ul>
 
-                <!--Hamburger menu-->
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="toggle" onclick="toggle()"></div>
 
-                <ul class="menu-nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#" class="zoom">Ramais</a></li>
-                    <li><a href="#" class="zoom">Informações</a></li>
-                    <li><a href="#" class="zoom">CPD</a></li>
-                    <li><a href="#" class="zoom">Frente de Loja</a></li>
-                    <li><a href="#" class="zoom">Central Colaborativa</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
     <!--Fim do cabeçalho-->
 
@@ -339,6 +331,46 @@
             </div>
         </div>
     </section><!--Fim da Escala de serviço-->
+
+    <!--Contato-->
+    <section class="sec contact" id="contact">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Fale conosco</h3>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <div class="row100">
+                        <div class="inputBx50">
+                            <input type="text" placeholder="Nome Completo">
+                        </div>
+                        <div class="inputBx50">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <textarea placeholder="Messagem"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sci">
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+            </div>
+            <p class="copyright">Desingn & Developed by <a href="#">Equipe T.I Arcomix</a></p>
+        </div>
+    </section><!-- Fim do Contato-->
 
     <script src="./assets/js/script.js"></script>
 </body>
