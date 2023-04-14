@@ -105,7 +105,7 @@ VALORES
 .stage {
     position: relative;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
     column-gap: 100px;
     row-gap: 50px;
     max-width: 100vw;
@@ -281,32 +281,32 @@ INFORMAÇÕES
     background: #000;
     padding-top: 250px;
     margin-top: -250px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
 }
 
-.inforBox {
+.infor h3,
+.infor p {
+    color: #fff;
+}
+
+.infor .inforBox p {
+    text-align: justify;
+}
+
+.infoBox {
     position: relative;
-    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
     margin-top: 40px;
 }
-
-#infor .maxw800p {
-    color: #fff;
-}
-
-.infoTex {
-    color: #fff;
-} 
 
 .inforBox h2 {
     color: #fff;
     font-size: 36px;
 }
 
-.inforBox h4 {
+.infoBox p {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -314,10 +314,6 @@ INFORMAÇÕES
     letter-spacing: 2px;
 }
 
-.inforBox p {
-    color: #fff;
-    text-align: justify;
-}
 
 /***********************************
 INFORMAÇÕES
@@ -477,6 +473,177 @@ CONTATO
 RESPONSIVIDADE
 **************************/
 
-@media (max-width: 1280px) {
+  
 
-}
+
+/*/ Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+    .infor span img {
+        width: 300px;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 50px;
+        padding: 0 50px;
+    }
+
+    .inforBox h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    p,
+    .inforBox p {
+        font-size: 12px
+    }
+
+    .row100 {
+        flex-direction: column;
+    }
+
+    .contactForm .row100 .inputBx50,
+    .contactForm .row100 .inputBx100 {
+        width: 100%;
+        margin: 0;
+    }
+ }
+
+/*/ Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .infor span img {
+        width: 400px;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 60px;
+        padding: 0 50px;
+    }
+
+    .inforBox h2 {
+        font-size: 2.4em;
+    }
+    
+    h3 {
+        font-size: 2.2em;
+    }
+
+    p,
+    .inforBox p {
+        font-size: 14px
+    }
+
+    .row100 {
+        flex-direction: column;
+    }
+
+    .contactForm .row100 .inputBx50,
+    .contactForm .row100 .inputBx100 {
+        width: 100%;
+        margin: 0;
+    }
+
+ }
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    .infor span img {
+        width: 500px;
+    }
+    
+    .banner {
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 70px;
+        padding: 0 50px;
+    }
+
+    .inforBox h2 {
+        font-size: 2.6em;
+    }
+    
+    h3 {
+        font-size: 2.4em;
+    }
+
+    p,
+    .inforBox p {
+        font-size: 16px
+    }
+
+    .row100 {
+        flex-direction: column;
+    }
+
+    .contactForm .row100 .inputBx50,
+    .contactForm .row100 .inputBx100 {
+        width: 100%;
+        margin: 0;
+    }
+ }
+
+/*/ Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .banner {
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 80px;
+        padding: 0 50px;
+    }
+
+    .inforBox h2 {
+        font-size: 3em;
+    }
+   
+    h3 {
+        font-size: 2.8em;
+    }
+
+    p,
+    .inforBox p {
+        font-size: 18px
+    }
+ }
+
+/*/ Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 90px;
+        padding: 0 50px;
+    }
+
+    .inforBox h2 {
+        font-size: 3.2em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    p,
+    .inforBox p {
+        font-size: 20px
+    }
+ }

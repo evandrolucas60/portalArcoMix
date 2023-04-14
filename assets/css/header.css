@@ -66,6 +66,10 @@ CABELÇALHO
      color: black;
    }
 
+   header.topnav.sticky nav ul li a:hover {
+    color: tomato;
+  }
+
 
    .toggle {
      display: none;
