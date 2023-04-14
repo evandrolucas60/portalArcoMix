@@ -5,5 +5,11 @@ window.addEventListener('scroll', () => {
 
 function toggle() {
     let header = document.querySelector('#topnav');
-    header.classList.toggle('active');
+    let input = document.querySelector('.checkbox');
+    if (input.checked) {
+        header.classList.toggle('active');
+    } else {
+        header.classList.remove('active');
+    }
+    
 }

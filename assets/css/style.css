@@ -325,7 +325,7 @@ INFORMAÇÕES
 .newsBx {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     max-width: 100%;
     margin-top: 40px;
@@ -379,6 +379,8 @@ CONTATO
 
 .contactForm  {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .contactForm .row100 {
@@ -467,3 +469,14 @@ CONTATO
 .copyright a {
     color: #fff;
 } 
+
+
+
+
+/**************************
+RESPONSIVIDADE
+**************************/
+
+@media (max-width: 1280px) {
+
+}

@@ -22,16 +22,27 @@
     <header class="topnav" id="topnav">
         <a href="./index.html" class="logo"><img src="./assets/img/header-logo.png" alt="Arco-Mix" width="100px"></a>
 
-        <ul class="menu-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#" class="zoom">Ramais</a></li>
-            <li><a href="#" class="zoom">Informações</a></li>
-            <li><a href="#" class="zoom">CPD</a></li>
-            <li><a href="#" class="zoom">Frente de Loja</a></li>
-            <li><a href="#" class="zoom">Central Colaborativa</a></li>
-        </ul>
-
-        <div class="toggle" onclick="toggle()"></div>
+        <nav role="navigation">
+            <div id="menuToggle">
+             
+              <input type="checkbox" class="checkbox" onclick="toggle()"/>
+              
+              
+              <span></span>
+              <span></span>
+              <span></span>
+              
+             
+              <ul class="menu-nav" id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Ramais</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">CPD</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Central</a></li>
+              </ul>
+            </div>
+          </nav>
 
     </header>
     <!--Fim do cabeçalho-->
