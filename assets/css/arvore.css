@@ -54,7 +54,10 @@
 
 /* Estilos para os elementos da árvore genealógica */
 .tree li div {
+    border: 1px solid #ccc;
     padding: 10px;
+    text-align: center;
+    background-color: #000;
 }
 
 .teamBx {
