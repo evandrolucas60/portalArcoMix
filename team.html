@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Árvore Genealógica</title>
+	<style>
+		/* Estilos para a árvore genealógica */
+		.tree ul {
+			padding-top: 20px;
+			position: relative;
+			display: block;
+			white-space: nowrap;
+		}
+
+		.tree li {
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+		}
+
+		.tree li::before, .tree li::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%;
+			height: 20px;
+		}
+
+		.tree li::after {
+			right: auto;
+			left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		.tree li:only-child {
+			padding-top: 0;
+		}
+
+		.tree li:first-child::before, .tree li:last-child::after {
+			border: 0 none;
+		}
+
+		.tree li:last-child::before {
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+		}
+
+		.tree li:first-child::after {
+			border-radius: 5px 0 0 0;
+		}
+
+		/* Estilos para os elementos da árvore genealógica */
+		.tree li div {
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: center;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+<body>
+	<div class="tree">
+		<ul>
+			<li>
+				<div>Avô Paterno</div>
+				<ul>
+					<li>
+						<div>Pai</div>
+						<ul>
+							<li>
+								<div>Filho</div>
+							</li>
+							<li>
+								<div>Filha</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div>Tio</div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div>Avó Materna</div>
+				<ul>
+					<li>
+						<div>Mãe</div>
+						<ul>
+							<li>
+								<div>Filho</div>
+							</li>
+							<li>
+								<div>Filha</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div>Tia</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
