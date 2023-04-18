@@ -1,113 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Árvore Genealógica</title>
-	<style>
-		/* Estilos para a árvore genealógica */
-		.tree ul {
-			padding-top: 20px;
-			position: relative;
-			display: block;
-			white-space: nowrap;
-		}
-
-		.tree li {
-			display: inline-block;
-			vertical-align: top;
-			text-align: center;
-			list-style-type: none;
-			position: relative;
-			padding: 20px 5px 0 5px;
-		}
-
-		.tree li::before, .tree li::after {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 50%;
-			border-top: 1px solid #ccc;
-			width: 50%;
-			height: 20px;
-		}
-
-		.tree li::after {
-			right: auto;
-			left: 50%;
-			border-left: 1px solid #ccc;
-		}
-
-		.tree li:only-child::after, .tree li:only-child::before {
-			display: none;
-		}
-
-		.tree li:only-child {
-			padding-top: 0;
-		}
-
-		.tree li:first-child::before, .tree li:last-child::after {
-			border: 0 none;
-		}
-
-		.tree li:last-child::before {
-			border-right: 1px solid #ccc;
-			border-radius: 0 5px 0 0;
-		}
-
-		.tree li:first-child::after {
-			border-radius: 5px 0 0 0;
-		}
-
-		/* Estilos para os elementos da árvore genealógica */
-		.tree li div {
-			border: 1px solid #ccc;
-			padding: 10px;
-			text-align: center;
-			background-color: #f1f1f1;
-		}
-	</style>
+	<link rel="icon" href="./assets/img/favicon.png">
+	<link rel="stylesheet" href="./assets/css/arvore.css">
+	<link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-	<div class="tree">
+	<!--Cabeçalho-->
+	<header class="topnav" id="topnav">
+		<a href="./index.html" class="logo"><img src="./assets/img/header-logo.png" alt="Arco-Mix" width="100px"></a>
+
+		<nav role="navigation">
+			<div id="menuToggle">
+
+				<input type="checkbox" class="checkbox" onclick="toggle()" />
+
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+
+				<ul class="menu-nav" id="menu">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="#">Ramais</a></li>
+					<li><a href="#">Info</a></li>
+					<li><a href="#">CPD</a></li>
+					<li><a href="#">Loja</a></li>
+					<li><a href="#">Central</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="tree teamBx">
 		<ul>
 			<li>
-				<div>Avô Paterno</div>
+				<div class="member">
+					<div class="imgBx"><img src="./assets/img/pessoa2.jpg"></div>
+                    <div class="details">
+                        <div>
+                            <h2>Edvaldo Guilherme<br><span>Diretor de TI</span></h2>
+                        </div>
+                    </div>
+				</div>
 				<ul>
-					<li>
-						<div>Pai</div>
-						<ul>
-							<li>
-								<div>Filho</div>
-							</li>
-							<li>
-								<div>Filha</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div>Tio</div>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<div>Avó Materna</div>
-				<ul>
-					<li>
-						<div>Mãe</div>
-						<ul>
-							<li>
-								<div>Filho</div>
-							</li>
-							<li>
-								<div>Filha</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div>Tia</div>
-					</li>
+					<div class="member">
+						<div class="imgBx"><img src="./assets/img/pessoa4.jpg"></div>
+						<div class="details">
+							<div>
+								<h2>Andressa Silva<br><span>Coordenadora de TI</span></h2>
+							</div>
+						</div>
+					</div>
+					<ul>
+						<li>
+							<div class="member">
+								<div class="imgBx"><img src="./assets/img/pessoa2.jpg"></div>
+								<div class="details">
+									<div>
+										<h2>Carlos José<br><span>Analista Segurança da Informação III</span></h2>
+									</div>
+								</div>
+							</div>
+							<ul>
+								<li>
+									<div class="member">analista I</div>
+									<ul>
+										<li>
+											<div class="member">aux I</div>
+										</li>
+										<li>
+											<div class="member">aux II</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="member">analista II</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="member">
+								<div class="imgBx"><img src="./assets/img/pessoa2.jpg"></div>
+								<div class="details">
+									<div>
+										<h2>Vinícius Silva<br><span>Analista de Dados III</span></h2>
+									</div>
+								</div>
+							</div>
+							<ul>
+								<li>
+									<div class="member">analista III</div>
+									<ul>
+										<li>
+											<div class="member">aux III</div>
+										</li>
+										<li>
+											<div class="member">aux IV</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="member">analista IV</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</ul>
 			</li>
 		</ul>
 	</div>
+
+	<script src="./assets/js/script.js"></script>
 </body>
+
 </html>

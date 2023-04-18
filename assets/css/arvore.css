@@ -1,0 +1,125 @@
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.tree li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+}
+
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+}
+
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+
+.tree li:only-child {
+    padding-top: 0;
+}
+
+.tree li:first-child::before, .tree li:last-child::after {
+    border: 0 none;
+}
+
+.tree li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+/* Estilos para os elementos da árvore genealógica */
+.tree li div {
+    padding: 10px;
+}
+
+.teamBx {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    margin-top: 80px;
+}
+
+.teamBx .member {
+    position: relative;
+    background: #000;
+    min-height: 200px;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamBx .member .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.teamBx .member .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamBx .member .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.teamBx .member:hover .details {
+    opacity: 1;
+}
+
+.teamBx .member .details h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px; 
+    letter-spacing: 1px;
+ }
+
+ .teamBx .member .details h2 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+} 
