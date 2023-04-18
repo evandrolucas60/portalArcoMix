@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+    <!-- Importando o DataTables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <!-- Importando a biblioteca SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
 </head>
 
 <body>
@@ -188,16 +194,16 @@
                     <h2>Linux</h2>
                     <p>Migrar os computadores de uma empresa para o sistema operacional Linux pode trazer
                         diversos benefícios.
-            
+
                         O Linux é um sistema operacional de código aberto e gratuito, o que significa que não é
                         necessário pagar licenças de uso. Além disso, é considerado mais seguro e estável em comparação
                         com outros sistemas operacionais.
-            
+
                         A migração para o Linux também pode aumentar a produtividade, pois oferece diversas ferramentas
                         gratuitas de software que podem ser usadas para diversas tarefas. Além disso, a personalização
                         do sistema operacional é mais fácil e pode ser ajustada para as necessidades específicas da
                         empresa.
-            
+
                         Outra vantagem é que o Linux tem uma grande comunidade de desenvolvedores que estão
                         constantemente atualizando e melhorando o sistema operacional. Isso significa que a empresa pode
                         ter acesso a novas funcionalidades e correções de segurança regularmente. Em resumo, migrar para
@@ -205,9 +211,9 @@
                         econômico, com a possibilidade de personalização e atualizações regulares.
                         Ao contrário do que muitos pensam, o Sistema Operacional LINUX é uma ótima alternativa para se
                         ter no computador, basta escolher uma disdibuição e aproveitar.
-            
+
                         Veja algumas empresas que utilizam linux:<br /><br />
-            
+
                         Banco do Brasil<br />
                         Casas Bahia<br />
                         Petrobrás<br />
@@ -218,7 +224,7 @@
                         Amazom<br />
                         NASA<br />
                         Dentre outras.<br /><br />
-            
+
                         Para se ter uma idéia, so em as Casas Bahia adotar o linux em suas lojas houve uma redução de
                         custo de mais de R$ 13 milhões.</p>
                 </div>
@@ -292,59 +298,13 @@
     <section class="sec escalaServico" id="escalaServico">
         <div class="mxw800p">
             <div id="tabela" class="tabela">
-                <table>
-                    <tr>
-                        <th>Dia da semana</th>
-                        <th>Data</th>
-                        <th>Colaborador</th>
-                        <th>Loja</th>
-                        <th>Horário</th>
-                        <th>Telefone</th>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>8h00</td>
-                        <td>17h00</td>
-                        <td>João</td>
-                        <td>asdasda</td>
-                        <td>asdasdasd</td>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>8h00</td>
-                        <td>17h00</td>
-                        <td>João</td>
-                        <td>asdasda</td>
-                        <td>asdasdasd</td>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>8h00</td>
-                        <td>17h00</td>
-                        <td>João</td>
-                        <td>asdasda</td>
-                        <td>asdasdasd</td>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>8h00</td>
-                        <td>17h00</td>
-                        <td>João</td>
-                        <td>asdasda</td>
-                        <td>asdasdasd</td>
-                    </tr>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>8h00</td>
-                        <td>17h00</td>
-                        <td>João</td>
-                        <td>asdasda</td>
-                        <td>asdasdasd</td>
-                    </tr>
+                <table id="tabela">
+                   
                 </table>
             </div>
         </div>
     </section><!--Fim da Escala de serviço-->
+    <input type="file" id="inputFile">
 
     <!--Contato-->
     <section class="sec contact" id="contact">
@@ -387,6 +347,8 @@
     </section><!-- Fim do Contato-->
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/table.js"></script>
+    
 </body>
 
 </html>
