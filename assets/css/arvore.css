@@ -71,8 +71,8 @@
 .teamBx .member {
     position: relative;
     background: #000;
-    min-height: 200px;
-    width: 150px;
+    min-height: 300px;
+    width: 250px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -96,23 +96,7 @@
     object-fit: cover;
 }
 
-.teamBx .member .details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    transition: 0.2s;
-    opacity: 0;
-}
 
-.teamBx .member:hover .details {
-    opacity: 1;
-}
 
 .teamBx .member .details h2 {
     color: #fff;
@@ -126,3 +110,55 @@
     font-size: 12px;
     font-weight: 300;
 } 
+
+
+.grid .figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #000;
+	color: #ed4e6e;
+}
+
+
+.cs-style-1 .figcaption {
+	height: 100%;
+	width: 150%;
+	opacity: 0;
+	text-align: center;
+	backface-visibility: hidden;
+	transition: transform 0.3s, opacity 0.3s;
+    z-index: 6;
+}
+
+.cs-style-1 .member:hover .figcaption,
+.cs-style-1 .member.cs-hover .figcaption {
+	opacity: 1;
+	transform: translate(15px, 15px);
+}
+
+
+
+.cs-style-1 .figcaption h2 {
+	margin-top: 70px;
+}
+
+.cs-style-1 .figcaption span {
+	display: block;
+}
+
+.cs-style-1 .figcaption a {
+	margin-top: 30px;
+}
+
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
