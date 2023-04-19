@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#inputFile').addEventListener('change', handleFileSelect, false);
 });
