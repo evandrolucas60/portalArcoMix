@@ -3,7 +3,7 @@
     position: relative;
     display: block;
     white-space: nowrap;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .tree li {
@@ -71,8 +71,8 @@
 .teamBx .member {
     position: relative;
     background: #000;
-    min-height: 300px;
-    width: 250px;
+    min-height: 200px;
+    width: 150px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -96,13 +96,12 @@
     object-fit: cover;
 }
 
-
-
 .teamBx .member .details h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px; 
     letter-spacing: 1px;
+    position: relative;
  }
 
  .teamBx .member .details h2 span {
@@ -117,7 +116,7 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: #000;
+	background: #2779a7;
 	color: #ed4e6e;
 }
 
@@ -141,7 +140,7 @@
 
 
 .cs-style-1 .figcaption h2 {
-	margin-top: 70px;
+	margin-top: 30px;
 }
 
 .cs-style-1 .figcaption span {
