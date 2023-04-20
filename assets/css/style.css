@@ -357,7 +357,7 @@ NOTÍCIAS
 ESCALA DE SERVIÇO
 ************************************/
 .tabela {
-    background: #fafafa;
+    background: #fff;
     color: #444;
     text-shadow: 0 1px 0 #fff;
     width: 100%;
@@ -365,7 +365,6 @@ ESCALA DE SERVIÇO
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px auto;
   }
   
   
@@ -374,6 +373,8 @@ ESCALA DE SERVIÇO
     border-collapse: separate;
     box-shadow: inset 0 1px 0 #fff;
     text-align: center;
+    width: 80%;
+    margin: 20px auto;
   } 
   
   th {
