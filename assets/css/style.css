@@ -65,7 +65,7 @@ BEM-VINDO
 }
 
 h3 {
-    font-size: 2.6rem;
+    font-size: 4.6rem;
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -76,6 +76,7 @@ p {
     font-weight: 300;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    text-align: justify;
 }
 
 p.hide {
@@ -597,7 +598,7 @@ RESPONSIVIDADE
     }
 
     h3 {
-        font-size: 1.8em;
+        font-size: 3.8em;
     }
 
     p,
@@ -640,7 +641,7 @@ RESPONSIVIDADE
     }
     
     h3 {
-        font-size: 2.2em;
+        font-size: 4.2em;
     }
 
     p,
@@ -685,7 +686,7 @@ RESPONSIVIDADE
     }
     
     h3 {
-        font-size: 2.4em;
+        font-size: 4.4em;
     }
 
     p,
@@ -725,7 +726,7 @@ RESPONSIVIDADE
     }
    
     h3 {
-        font-size: 2.8em;
+        font-size: 4.8em;
     }
 
     p,
@@ -756,7 +757,7 @@ RESPONSIVIDADE
     }
 
     h3 {
-        font-size: 3em;
+        font-size: 5em;
     }
 
     p,
