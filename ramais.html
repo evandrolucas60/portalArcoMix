@@ -12,17 +12,9 @@
     <!--Css Stylesheet-->
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/ramais.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!-- Importando o DataTables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-
-    <!-- Importando a biblioteca SheetJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
 </head>
 
 <body>
@@ -60,250 +52,294 @@
         <h2>Ramais<br /><span>ArcoMix</span></h2>
     </section><!--Fim do banner-->
 
-    <!--Bem-vindo-->
+    <!--Inicio Ramais-->
     <section class="sec">
         <div class="content">
-            <div class="mxw800p">
-                <h3>Bem-vindo</h3>
-                <p>
-                    Nossa intranet foi projetada para fornecer informações importantes e relevantes sobre os avanços em
-                    tecnologia que ajudam a impulsionar nossas operações diárias. Aqui, você encontrará notícias,
-                    atualizações e recursos relacionados à TI, que podem ajudá-lo(a) a entender melhor como a tecnologia
-                    é usada para melhorar a eficiência e a produtividade em nossas lojas e escritórios. Agradecemos por
-                    visitar nossa página de TI e esperamos que você aproveite o conteúdo que preparamos para ajudá-lo(a)
-                    a entender melhor os avanços tecnológicos em nosso setor. Sinta-se à vontade para explorar e nos
-                    informar se tiver alguma sugestão ou comentário para tornar nossa intranet ainda mais útil e
-                    informativa.
-                </p>
-
-                <a href="team.html" class="btn">Conheça Nossa Equipe</a>
-
-            </div>
-        </div>
-    </section><!--fim do benm-vindo-->
-
-    <!--Escala de serviço-->
-    <section class="sec escalaServico" id="escalaServico">
-        <div class="content">
-            <div>
-                <h3>Escala de serviço</h3>
-                <div id="tabela" class="tabela">
-                </div>
-            </div>
-        </div>
-    </section><!--Fim da Escala de serviço-->
-
-    <!--Valores-->
-    <section class="sec sec2">
-
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Nossos Valores</h3>
-            </div>
-        </div>
-        <div class="wrapper values mxw800p">
-            <ul class="stage">
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Espiritualidade: Amar a Deus sobre todas as coisas e ao próximo como a si mesmo.
-                            </p>
+            <h3>Lista de Ramais</h3>
+            <ul id="rb-grid" class="rb-grid clearfix">
+                <li class="icon-clima-1 rb-span-2">
+                    <h3>T.I</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">T.I</span><span class="icon-clima-1"></span><span>Lista de
+                                    Ramais</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>19°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-2"></span><span>19°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-2"></span><span>18°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-2"></span><span>17°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-1"></span><span>19°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-1"></span><span>22°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>18°C</span></div>
                         </div>
                     </div>
                 </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Ética: Todas as nossas condutas são pautadas pelos princípios morais de integridade,
-                                honestidade, justiça, transparência e senso de responsabilidade, com foco permanente na
-                                sustentabilidade.
-                            </p>
+                <li class="icon-clima-2">
+                    <h3>Infraestrutura</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Paris</span><span class="icon-clima-2"></span><span>11°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>12°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-4"></span><span>11°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-4"></span><span>10°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-4"></span><span>9°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-2"></span><span>10°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>10°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-2"></span><span>12°C</span></div>
                         </div>
                     </div>
                 </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Família: Agimos como uma família unida, que trabalha de forma integrada e solidária, se
-                                tratando com respeito e confiança em clima de alegria e amizade fraterna.
-                            </p>
+                <li class="icon-clima-1">
+                    <h3>DPP</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Belgrade</span><span
+                                    class="icon-clima-1"></span><span>15°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-3"></span><span>16°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-3"></span><span>17°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-3"></span><span>15°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-4"></span><span>13°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-3"></span><span>10°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-1"></span><span>11°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>12°C</span></div>
                         </div>
                     </div>
                 </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Inovação: Constantemente, buscamos ter atitude e coragem para ousar, sabedoria para
-                                inovar e fazer melhor a cada dia.
-                            </p>
+                <li class="icon-clima-4">
+                    <h3>Contabilidade</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Moscow</span><span class="icon-clima-4"></span><span>1°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-4"></span><span>-1°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-6"></span><span>-2°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-6"></span><span>-6°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-6"></span><span>-4°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-5"></span><span>-5°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-6"></span><span>-6°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-6"></span><span>-8°C</span></div>
                         </div>
                     </div>
                 </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Resultado: Trabalhamos para atingir as nossas metas e construir parcerias sólidas. Com
-                                foco na prevenção e redução das perdas, dos custos e despesas, celebrando com a equipe
-                                os bons resultados, com a prática da meritocracia.
-                            </p>
+                <li class="icon-clima-1">
+                    <h3>Controladoria</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">New Delhi</span><span
+                                    class="icon-clima-1"></span><span>17°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>18°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-8"></span><span>19°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-8"></span><span>16°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-10"></span><span>17°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-10"></span><span>18°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>17°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>17°C</span></div>
                         </div>
                     </div>
                 </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Valorização do cliente interno e externo: Buscamos atender e superar as expectativas dos
-                                nossos clientes(Interno e Externo) e dos Fornecedores. Para isso, firmamos o compromisso
-                                de respeito nas relações em valorizar; reconhecer, motivar e capacitar nossos
-                                colaboradores
-                            </p>
+                <li class="icon-clima-1">
+                    <h3>Logística</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Tel Aviv</span><span
+                                    class="icon-clima-1"></span><span>22°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>23°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-2"></span><span>22°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-2"></span><span>22°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-2"></span><span>21°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-1"></span><span>21°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>21°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-2"></span><span>24°C</span></div>
                         </div>
                     </div>
                 </li>
-
+                <li class="icon-clima-2">
+                    <h3>Marketing</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Cairo</span><span class="icon-clima-2"></span><span>21°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>22°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-1"></span><span>20°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-1"></span><span>21°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-1"></span><span>21°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-2"></span><span>21°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>22°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-2"></span><span>23°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-11">
+                    <h3>Financeiro</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">New York</span><span
+                                    class="icon-clima-11"></span><span>3°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-11"></span><span>3°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-11"></span><span>-1°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-11"></span><span>-2°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-7"></span><span>1°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-7"></span><span>0°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-11"></span><span>2°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-11"></span><span>3°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-2 rb-span-2">
+                    <h3>Comercial</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">San Francisco</span><span
+                                    class="icon-clima-2"></span><span>15°C</span></div>
+                            <div><span>Mon</span><span class="icon-clima-2"></span><span>16°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-2"></span><span>14°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-2"></span><span>13°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-2"></span><span>15°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-2"></span><span>15°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-1"></span><span>16°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>15°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-2">
+                    <h3>GC/Price</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Tokyo</span><span class="icon-clima-2"></span><span>8°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>7°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-2"></span><span>6°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-1"></span><span>8°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-1"></span><span>8°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-2"></span><span>6°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>5°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-2"></span><span>5°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-1 rb-span-2">
+                    <h3>E-Commerce</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">T.I</span><span class="icon-clima-1"></span><span>Lista de
+                                    Ramais</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>19°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-2"></span><span>19°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-2"></span><span>18°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-2"></span><span>17°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-1"></span><span>19°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-1"></span><span>22°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>18°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-2">
+                    <h3>Recepção</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Paris</span><span class="icon-clima-2"></span><span>11°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>12°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-4"></span><span>11°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-4"></span><span>10°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-4"></span><span>9°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-2"></span><span>10°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>10°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-2"></span><span>12°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-1">
+                    <h3>Portaria</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Belgrade</span><span
+                                    class="icon-clima-1"></span><span>15°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-3"></span><span>16°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-3"></span><span>17°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-3"></span><span>15°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-4"></span><span>13°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-3"></span><span>10°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-1"></span><span>11°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>12°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-4">
+                    <h3>Cozinha</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Moscow</span><span class="icon-clima-4"></span><span>1°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-4"></span><span>-1°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-6"></span><span>-2°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-6"></span><span>-6°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-6"></span><span>-4°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-5"></span><span>-5°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-6"></span><span>-6°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-6"></span><span>-8°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-1">
+                    <h3>Diretoria</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">New Delhi</span><span
+                                    class="icon-clima-1"></span><span>17°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-1"></span><span>18°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-8"></span><span>19°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-8"></span><span>16°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-10"></span><span>17°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-10"></span><span>18°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-2"></span><span>17°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-1"></span><span>17°C</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon-clima-4 rb-span-2">
+                    <h3>ADM.Prazeres</h3><span class="rb-temp">Lista de Ramais</span>
+                    <div class="rb-overlay">
+                        <span class="rb-close">close</span>
+                        <div class="rb-week">
+                            <div><span class="rb-city">Sydney</span><span class="icon-clima-4"></span><span>28°C</span>
+                            </div>
+                            <div><span>Mon</span><span class="icon-clima-4"></span><span>24°C</span></div>
+                            <div><span>Tue</span><span class="icon-clima-4"></span><span>26°C</span></div>
+                            <div><span>Wed</span><span class="icon-clima-2"></span><span>27°C</span></div>
+                            <div><span>Thu</span><span class="icon-clima-2"></span><span>30°C</span></div>
+                            <div><span>Fri</span><span class="icon-clima-8"></span><span>31°C</span></div>
+                            <div><span>Sat</span><span class="icon-clima-8"></span><span>29°C</span></div>
+                            <div><span>Sun</span><span class="icon-clima-8"></span><span>29°C</span></div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
-
-    </section><!--Fim dos valores-->
-
-    <!--Informação-->
-    <section class="sec infor" id="infor">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Informações</h3>
-
-                <span><img src="./assets/img/linuximg.png" alt="linux logo"></span>
-
-            </div>
-
-            <div class="inforBox mxw800p">
-                <div class="box">
-                    <h2>Linux</h2>
-                    <p>Migrar os computadores de uma empresa para o sistema operacional Linux pode trazer
-                        diversos benefícios.
-
-                        O Linux é um sistema operacional de código aberto e gratuito, o que significa que não é
-                        necessário pagar licenças de uso. Além disso, é considerado mais seguro e estável em comparação
-                        com outros sistemas operacionais.
-
-                        A migração para o Linux também pode aumentar a produtividade, pois oferece diversas ferramentas
-                        gratuitas de software que podem ser usadas para diversas tarefas. Além disso, a personalização
-                        do sistema operacional é mais fácil e pode ser ajustada para as necessidades específicas da
-                        empresa.
-
-                        Outra vantagem é que o Linux tem uma grande comunidade de desenvolvedores que estão
-                        constantemente atualizando e melhorando o sistema operacional. Isso significa que a empresa pode
-                        ter acesso a novas funcionalidades e correções de segurança regularmente. Em resumo, migrar para
-                        o Linux pode oferecer à empresa um sistema operacional mais seguro, estável, produtivo e
-                        econômico, com a possibilidade de personalização e atualizações regulares.
-                        Ao contrário do que muitos pensam, o Sistema Operacional LINUX é uma ótima alternativa para se
-                        ter no computador, basta escolher uma disdibuição e aproveitar.
-
-                        Veja algumas empresas que utilizam linux:<br /><br />
-
-                        Banco do Brasil<br />
-                        Casas Bahia<br />
-                        Petrobrás<br />
-                        Lojas Colombo<br />
-                        Lojas Renner<br />
-                        Google<br />
-                        Facebook<br />
-                        Amazom<br />
-                        NASA<br />
-                        Dentre outras.<br /><br />
-
-                        Para se ter uma idéia, so em as Casas Bahia adotar o linux em suas lojas houve uma redução de
-                        custo de mais de R$ 13 milhões.</p>
-                </div>
-            </div>
-        </div>
-    </section><!--Fim da Informação-->
-
-    <!--Nóticias-->
-    <section class="sec news" id="news">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Últimas notícias</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos veritatis ducimus quo, nisi
-                    fuga quas, neque ea tenetur optio minus quam in suscipit sit explicabo animi eaque hic excepturi!
-                </p>
-            </div>
-            <div class="newsBx mxw800p">
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-
-                <div class="mancht">
-                    <a href="">
-                        <h2>Manchete</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section><!--Fim Ramais-->
 
     <!--Contato-->
     <section class="sec contact" id="contact">
