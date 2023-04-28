@@ -41,8 +41,9 @@ Estiliza o texto em cada div
 */
 
 .rb-grid li h3 {
-    font-size: 2.6em;
+    font-size: 1.5em;
     font-weight: 100;
+	text-transform: uppercase;
 }
 
 
@@ -63,7 +64,7 @@ Estiliza o texto em cada div
 
 .rb-temp {
 	display: block;
-	font-size: 2em;
+	font-size: 1.2em;
 	opacity: 0.5;
 	transition: all 0.3s ease-in-out;
 }
