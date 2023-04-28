@@ -173,7 +173,10 @@ Estiliza o texto em cada div
 .rb-grid li:nth-child(13) { background: #FFCC66; }
 .rb-grid li:nth-child(14) { background: #99CC99; }
 .rb-grid li:nth-child(15) { background: #33CCCC;; }
-.rb-grid li:nth-child(16) { background: #CC6699; }
+.rb-grid li:nth-child(16) { background: #996699; }
+.rb-grid li:nth-child(17) { background: #669999; }
+.rb-grid li:nth-child(18) { background: #C24747; }
+.rb-grid li:nth-child(19) { background: #FFCC66; }
 
 
 /* Overlay Columns */

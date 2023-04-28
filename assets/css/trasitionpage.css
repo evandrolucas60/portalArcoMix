@@ -1,9 +1,20 @@
+.sec-ramals{
+	display: flex;
+	flex-direction: column;
+}
+
+.headingBackground {
+	width: 100%;
+	background: #000;
+}
+
 .pt-perspective {
 	position: relative;
 }
 
 .pt-page {
-	position: relative;
+	position: absolute;
+	
 	visibility: hidden;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
@@ -17,8 +28,12 @@
 	transform-style: preserve-3d;
 }
 
-.pt-page-current,
-.no-js .pt-page {
+.pt-triggers {
+	position: relative;
+	margin: 0 auto;
+}
+
+.pt-page-current {
 	visibility: visible;
 	z-index: 1;
 }
@@ -39,28 +54,12 @@
 
 /* scale and fade */
 
-.pt-page-scaleDown {
-	animation: scaleDown .7s ease both;
-}
-
 .pt-page-scaleUp {
 	animation: scaleUp .7s ease both;
 }
 
 .pt-page-scaleUpDown {
 	animation: scaleUpDown .5s ease both;
-}
-
-.pt-page-scaleDownUp {
-	animation: scaleDownUp .5s ease both;
-}
-
-.pt-page-scaleDownCenter {
-	animation: scaleDownCenter .4s ease-in both;
-}
-
-.pt-page-scaleUpCenter {
-	animation: scaleUpCenter .4s ease-out both;
 }
 
 /************ keyframes ************/
