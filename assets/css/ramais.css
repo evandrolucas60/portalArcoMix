@@ -6,8 +6,12 @@ rb.-grid {
     list-style: none;
     text-align: center;
     margin: 0 auto;
+	overflow-y:auto;
 }
 
+.rb-grid .phoneNumbers {
+	overflow: auto;
+}
 /*
 O itens da lista teram uma largura fluida
 */
@@ -126,7 +130,11 @@ Estiliza o texto em cada div
 }
 
 .rb-week > div:first-child {
-	width: 30%;
+	width: 40%;
+}
+
+.rb-week > div:last-child {
+	width: 60%;
 }
 
 .rb-week span {
@@ -143,18 +151,11 @@ Estiliza o texto em cada div
 .rb-week span.rb-city {
 	font-weight: 700;
 	padding: 1% 10%;
-	font-size: 1em;
+	font-size: 1px;
 	line-height: 1.2;
 }
 
-.rb-week [class^="icon-"]:before {
-	font-size: 2.5em;
-	font-weight: normal;
-}
 
-.rb-week > div:first-child [class^="icon-"] {
-	opacity: 0.1;
-}
 
 /* Colors */
 
