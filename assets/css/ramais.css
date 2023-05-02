@@ -74,6 +74,10 @@ Estiliza o texto em cada div
 	transition: all 0.3s ease-in-out;
 }
 
+.capeview {
+	margin-top: 15px;
+}
+
 .rb-grid li:hover .rb-temp{
     opacity: 1;
 }
