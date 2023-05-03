@@ -2,16 +2,13 @@
 Centraliza o ul no seu parent
 */
 
-rb.-grid {
+.rb-grid {
     list-style: none;
     text-align: center;
-    margin: 0 auto;
-	overflow-y:auto;
 }
 
 .rb-grid .phoneNumbers {
-	
-	overflow: auto;
+	overflow-y: auto;
 }
 /*
 O itens da lista teram uma largura fluida
@@ -54,7 +51,7 @@ Estiliza o texto em cada div
 
 .rb-grid li[class^="icon-"]:before,
 .rb-grid li[class*=" icon-"]:before {
-	font-size: 10em;
+	font-size: 1em;
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -156,7 +153,7 @@ Estiliza o texto em cada div
 .rb-week span.rb-city {
 	font-weight: 700;
 	padding: 1% 10%;
-	font-size: 1px;
+	font-size: 1em;
 	line-height: 1.2;
 }
 

@@ -63,7 +63,7 @@ var Boxgrid = (function() {
 
 	function init( options ) {		
 		// apply fittext plugin
-		$items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.5 );
+		$items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.8 );
 		initEvents();
 	}
 
