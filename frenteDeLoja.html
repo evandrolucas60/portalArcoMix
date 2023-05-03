@@ -56,7 +56,7 @@
 
     <!--banner-->
     <section class="banner">
-        <h2>Portal<br /><span>T.I</span><br> ArcoMix</h2>
+        <h2>Frente<br />de<br><span>Loja</span><br></h2>
     </section><!--Fim do banner-->
 
     <!--Bem-vindo-->
@@ -65,32 +65,102 @@
             <div class="mxw800p">
                 <h3>Bem-vindo</h3>
                 <p>
-                    Nossa intranet foi projetada para fornecer informações importantes e relevantes sobre os avanços em
-                    tecnologia que ajudam a impulsionar nossas operações diárias. Aqui, você encontrará notícias,
-                    atualizações e recursos relacionados à TI, que podem ajudá-lo(a) a entender melhor como a tecnologia
-                    é usada para melhorar a eficiência e a produtividade em nossas lojas e escritórios. Agradecemos por
-                    visitar nossa página de TI e esperamos que você aproveite o conteúdo que preparamos para ajudá-lo(a)
-                    a entender melhor os avanços tecnológicos em nosso setor. Sinta-se à vontade para explorar e nos
-                    informar se tiver alguma sugestão ou comentário para tornar nossa intranet ainda mais útil e
-                    informativa.
+                    Olá esta é nossa intranet destinada à frente de loja do supermercado Arco-Mix!
+                    Estamos muito felizes em tê-lo(a) aqui. Esta intranet foi criada para fornecer a você informações
+                    úteis e atualizadas sobre o nosso supermercado, além de ferramentas e recursos que irão ajudá-lo(a)
+                    a oferecer um excelente atendimento aos nossos clientes.
                 </p>
 
-                <a href="team.html" class="btn">Conheça Nossa Equipe</a>
+                <p>
+                    Aqui, você encontrará notícias e comunicados importantes, treinamentos e manuais de procedimentos,
+                    materiais de vendas e merchandising, além de uma seção de perguntas frequentes para tirar todas as
+                    suas dúvidas.
+                </p>
+
+                <p>
+                    Não deixe de explorar tudo o que a intranet tem a oferecer. Ela foi pensada especialmente para você,
+                    que está na linha de frente do nosso negócio. Conte conosco para oferecer todo o suporte necessário
+                    para que você possa realizar o seu trabalho com excelência.
+                </p>
+
+                <p>
+                    Seja bem-vindo(a) e boa navegação!
+                </p>
+
+
+                <a href="https://oauth.softwareexpress.com.br/auth/realms/sitefweb/protocol/openid-connect/auth?response_type=code&client_id=sitefweb&redirect_uri=https%3A%2F%2Fsitefweb.softwareexpress.com.br%2Fsitefweb%2Fsso%2Flogin&state=f2ed53fa-a9d3-4a1b-8a99-00b0a5e7087d&login=true&scope=openid" class="btn">Acesso ao SiTef</a>
+                <a href="https://webmail.arcomix.com.br/?_task=mail&_mbox=INBOX" class="btn">WebMail Arco-Mix</a>
 
             </div>
         </div>
     </section><!--fim do benm-vindo-->
 
-    <!--Escala de serviço-->
+    <!--erros do SiTef-->
     <section class="sec escalaServico" id="escalaServico">
         <div class="content">
             <div>
-                <h3>Escala de serviço</h3>
+                <h3>Tabela de erros do SiTef</h3>
                 <div id="tabela" class="tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Mensagem apresentada no PDV</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <tr><td>0</td><td>Transção OK</td><td>Aprovada, Transação executada</td></tr>
+                                <tr><td>03</td><td>Estabelecimento inválido</td><td>Estabelecimento comercial inválido</td></tr>
+                                <tr><td>06</td><td>Refaça a transação </td><td>Erro</td></tr>  
+                                <tr><td>12</td><td>Transação inválida </td><td>Transação inválida</td></tr>  
+                                <tr><td>13</td><td>Valor inválido </td><td>Valor da transação inválido</td></tr>
+                                <tr><td>14</td><td>Problema no cartão </td><td>Cartão inválido</td></tr>
+                                <tr><td>15</td><td>Problema no cartão </td><td>Instituição não cadastrada</td></tr>
+                                <tr><td>19</td><td>Refaça a transação </td><td>Refaça a transação</td></tr>
+                                <tr><td>20</td><td>Refaça a transação </td><td>Resposta inválida</td></tr>
+                                <tr><td>25</td><td>Refaça a transação </td><td>Registro não encontrado</td></tr>
+                                <tr><td>30</td><td>Refaça a transação </td><td>Erro de formato</td></tr>
+                                <tr><td>31</td><td>Problema no cartão </td><td>Instituição não pertence a rede</td></tr>
+                                <tr><td>38</td><td>Problema no cartão </td><td>Excedido números de tentativas do pin</td></tr>
+                                <tr><td>39</td><td>Conta inválida </td><td>Número de conta inválida</td></tr>
+                                <tr><td>41</td><td>Problema no cartão </td><td>Cartão de extravio</td></tr>
+                                <tr><td>43</td><td>Problema no cartão </td><td>Cartão roubado</td></tr>
+                                <tr><td>51</td><td>Excede limite </td><td>Saldo insuficiente</td></tr>
+                                <tr><td>52</td><td>Problema no cartão </td><td>Conta corrente não cadastrada</td></tr>
+                                <tr><td>54</td><td>Problema no cartão </td><td>Não autorizada, cartão vencido</td></tr>
+                                <tr><td>55</td><td>Senha inválida </td><td>Senha incorreta</td></tr>
+                                <tr><td>56</td><td>Problema no cartão </td><td>Cartão sem registro</td></tr>
+                                <tr><td>57</td><td>Problema no cartão </td><td>Transação não permitida a este cliente</td></tr>
+                                <tr><td>59</td><td>Conta inválida </td><td>Conta irregular</td></tr>
+                                <tr><td>60</td><td>Ligue Cartão </td><td>Entrar em contato com a instituição</td></tr>
+                                <tr><td>61</td><td>Excede limite </td><td>Excedido o limite de saque</td></tr>
+                                <tr><td>65</td><td>Excede limite </td><td>Excedido frequência de saque</td></tr>
+                                <tr><td>76</td><td>Problema no cartão </td><td>Cartão bloqueado</td></tr>
+                                <tr><td>79</td><td>Problema no banco </td><td>Transação não permitida nesse ciclo</td></tr>
+                                <tr><td>83</td><td>Refaça transação </td><td>Time-out</td></tr>
+                                <tr><td>84</td><td>Refaça transação </td><td>Log-on(terminal não aberto)</td></tr>
+                                <tr><td>85</td><td>Refaça transação </td><td>Problema de rede local</td></tr>
+                                <tr><td>87</td><td>Falta cartão </td><td>Cartão obrigatório na transação</td></tr>
+                                <tr><td>91</td><td>Refaça transação </td><td>Instituição temporariamente fora de operação</td></tr>
+                                <tr><td>M7</td><td>IPTE inválido </td><td>Códido IPTE inválido</td></tr>
+                                <tr><td>M9</td><td>Refaça transação </td><td>Data inválida </td></tr>
+                                <tr><td>N0</td><td>Refaça transação </td><td>Mac inválido </td></tr>
+                                <tr><td>N1</td><td>Refaça transação </td><td>Dados inválidos </td></tr>
+                                <tr><td>N2</td><td>Refaça transação </td><td>Código de processamento inválido </td></tr>
+                                <tr><td>N3</td><td>Transação cancelada </td><td>Transação cancelada </td></tr>
+                                <tr><td>N4</td><td>Pagamento inválido </td><td>Empresa credora inválida </td></tr>
+                                <tr><td>N5</td><td> C.B inválido </td><td>Código de barras inválido </td></tr>
+                                <tr><td>N9</td><td>Refaça transação </td><td> NSU repetido </td></tr>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <a href="./assets/archives/sitef.pdf" class="btn">Download da Planilha</a>
         </div>
-    </section><!--Fim da Escala de serviço-->
+    </section><!--Fim do erros do SiTef-->
 
     <!--Valores-->
     <section class="sec sec2">
@@ -352,7 +422,6 @@
     </section><!-- Fim do Contato-->
 
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/InputPath.js"></script>
 </body>
 
 </html>
