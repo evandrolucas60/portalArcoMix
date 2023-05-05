@@ -88,7 +88,8 @@
                 </p>
 
 
-                <a href="https://oauth.softwareexpress.com.br/auth/realms/sitefweb/protocol/openid-connect/auth?response_type=code&client_id=sitefweb&redirect_uri=https%3A%2F%2Fsitefweb.softwareexpress.com.br%2Fsitefweb%2Fsso%2Flogin&state=f2ed53fa-a9d3-4a1b-8a99-00b0a5e7087d&login=true&scope=openid" class="btn">Acesso ao SiTef</a>
+                <a href="https://oauth.softwareexpress.com.br/auth/realms/sitefweb/protocol/openid-connect/auth?response_type=code&client_id=sitefweb&redirect_uri=https%3A%2F%2Fsitefweb.softwareexpress.com.br%2Fsitefweb%2Fsso%2Flogin&state=f2ed53fa-a9d3-4a1b-8a99-00b0a5e7087d&login=true&scope=openid"
+                    class="btn">Acesso ao SiTef</a>
                 <a href="https://webmail.arcomix.com.br/?_task=mail&_mbox=INBOX" class="btn">WebMail Arco-Mix</a>
 
             </div>
@@ -111,48 +112,216 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <tr><td>0</td><td>Transção OK</td><td>Aprovada, Transação executada</td></tr>
-                                <tr><td>03</td><td>Estabelecimento inválido</td><td>Estabelecimento comercial inválido</td></tr>
-                                <tr><td>06</td><td>Refaça a transação </td><td>Erro</td></tr>  
-                                <tr><td>12</td><td>Transação inválida </td><td>Transação inválida</td></tr>  
-                                <tr><td>13</td><td>Valor inválido </td><td>Valor da transação inválido</td></tr>
-                                <tr><td>14</td><td>Problema no cartão </td><td>Cartão inválido</td></tr>
-                                <tr><td>15</td><td>Problema no cartão </td><td>Instituição não cadastrada</td></tr>
-                                <tr><td>19</td><td>Refaça a transação </td><td>Refaça a transação</td></tr>
-                                <tr><td>20</td><td>Refaça a transação </td><td>Resposta inválida</td></tr>
-                                <tr><td>25</td><td>Refaça a transação </td><td>Registro não encontrado</td></tr>
-                                <tr><td>30</td><td>Refaça a transação </td><td>Erro de formato</td></tr>
-                                <tr><td>31</td><td>Problema no cartão </td><td>Instituição não pertence a rede</td></tr>
-                                <tr><td>38</td><td>Problema no cartão </td><td>Excedido números de tentativas do pin</td></tr>
-                                <tr><td>39</td><td>Conta inválida </td><td>Número de conta inválida</td></tr>
-                                <tr><td>41</td><td>Problema no cartão </td><td>Cartão de extravio</td></tr>
-                                <tr><td>43</td><td>Problema no cartão </td><td>Cartão roubado</td></tr>
-                                <tr><td>51</td><td>Excede limite </td><td>Saldo insuficiente</td></tr>
-                                <tr><td>52</td><td>Problema no cartão </td><td>Conta corrente não cadastrada</td></tr>
-                                <tr><td>54</td><td>Problema no cartão </td><td>Não autorizada, cartão vencido</td></tr>
-                                <tr><td>55</td><td>Senha inválida </td><td>Senha incorreta</td></tr>
-                                <tr><td>56</td><td>Problema no cartão </td><td>Cartão sem registro</td></tr>
-                                <tr><td>57</td><td>Problema no cartão </td><td>Transação não permitida a este cliente</td></tr>
-                                <tr><td>59</td><td>Conta inválida </td><td>Conta irregular</td></tr>
-                                <tr><td>60</td><td>Ligue Cartão </td><td>Entrar em contato com a instituição</td></tr>
-                                <tr><td>61</td><td>Excede limite </td><td>Excedido o limite de saque</td></tr>
-                                <tr><td>65</td><td>Excede limite </td><td>Excedido frequência de saque</td></tr>
-                                <tr><td>76</td><td>Problema no cartão </td><td>Cartão bloqueado</td></tr>
-                                <tr><td>79</td><td>Problema no banco </td><td>Transação não permitida nesse ciclo</td></tr>
-                                <tr><td>83</td><td>Refaça transação </td><td>Time-out</td></tr>
-                                <tr><td>84</td><td>Refaça transação </td><td>Log-on(terminal não aberto)</td></tr>
-                                <tr><td>85</td><td>Refaça transação </td><td>Problema de rede local</td></tr>
-                                <tr><td>87</td><td>Falta cartão </td><td>Cartão obrigatório na transação</td></tr>
-                                <tr><td>91</td><td>Refaça transação </td><td>Instituição temporariamente fora de operação</td></tr>
-                                <tr><td>M7</td><td>IPTE inválido </td><td>Códido IPTE inválido</td></tr>
-                                <tr><td>M9</td><td>Refaça transação </td><td>Data inválida </td></tr>
-                                <tr><td>N0</td><td>Refaça transação </td><td>Mac inválido </td></tr>
-                                <tr><td>N1</td><td>Refaça transação </td><td>Dados inválidos </td></tr>
-                                <tr><td>N2</td><td>Refaça transação </td><td>Código de processamento inválido </td></tr>
-                                <tr><td>N3</td><td>Transação cancelada </td><td>Transação cancelada </td></tr>
-                                <tr><td>N4</td><td>Pagamento inválido </td><td>Empresa credora inválida </td></tr>
-                                <tr><td>N5</td><td> C.B inválido </td><td>Código de barras inválido </td></tr>
-                                <tr><td>N9</td><td>Refaça transação </td><td> NSU repetido </td></tr>
+                            <tr>
+                                <td>0</td>
+                                <td>Transção OK</td>
+                                <td>Aprovada, Transação executada</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>Estabelecimento inválido</td>
+                                <td>Estabelecimento comercial inválido</td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>Refaça a transação </td>
+                                <td>Erro</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Transação inválida </td>
+                                <td>Transação inválida</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Valor inválido </td>
+                                <td>Valor da transação inválido</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Problema no cartão </td>
+                                <td>Cartão inválido</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Problema no cartão </td>
+                                <td>Instituição não cadastrada</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Refaça a transação </td>
+                                <td>Refaça a transação</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Refaça a transação </td>
+                                <td>Resposta inválida</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>Refaça a transação </td>
+                                <td>Registro não encontrado</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Refaça a transação </td>
+                                <td>Erro de formato</td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>Problema no cartão </td>
+                                <td>Instituição não pertence a rede</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>Problema no cartão </td>
+                                <td>Excedido números de tentativas do pin</td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>Conta inválida </td>
+                                <td>Número de conta inválida</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>Problema no cartão </td>
+                                <td>Cartão de extravio</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>Problema no cartão </td>
+                                <td>Cartão roubado</td>
+                            </tr>
+                            <tr>
+                                <td>51</td>
+                                <td>Excede limite </td>
+                                <td>Saldo insuficiente</td>
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>Problema no cartão </td>
+                                <td>Conta corrente não cadastrada</td>
+                            </tr>
+                            <tr>
+                                <td>54</td>
+                                <td>Problema no cartão </td>
+                                <td>Não autorizada, cartão vencido</td>
+                            </tr>
+                            <tr>
+                                <td>55</td>
+                                <td>Senha inválida </td>
+                                <td>Senha incorreta</td>
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>Problema no cartão </td>
+                                <td>Cartão sem registro</td>
+                            </tr>
+                            <tr>
+                                <td>57</td>
+                                <td>Problema no cartão </td>
+                                <td>Transação não permitida a este cliente</td>
+                            </tr>
+                            <tr>
+                                <td>59</td>
+                                <td>Conta inválida </td>
+                                <td>Conta irregular</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>Ligue Cartão </td>
+                                <td>Entrar em contato com a instituição</td>
+                            </tr>
+                            <tr>
+                                <td>61</td>
+                                <td>Excede limite </td>
+                                <td>Excedido o limite de saque</td>
+                            </tr>
+                            <tr>
+                                <td>65</td>
+                                <td>Excede limite </td>
+                                <td>Excedido frequência de saque</td>
+                            </tr>
+                            <tr>
+                                <td>76</td>
+                                <td>Problema no cartão </td>
+                                <td>Cartão bloqueado</td>
+                            </tr>
+                            <tr>
+                                <td>79</td>
+                                <td>Problema no banco </td>
+                                <td>Transação não permitida nesse ciclo</td>
+                            </tr>
+                            <tr>
+                                <td>83</td>
+                                <td>Refaça transação </td>
+                                <td>Time-out</td>
+                            </tr>
+                            <tr>
+                                <td>84</td>
+                                <td>Refaça transação </td>
+                                <td>Log-on(terminal não aberto)</td>
+                            </tr>
+                            <tr>
+                                <td>85</td>
+                                <td>Refaça transação </td>
+                                <td>Problema de rede local</td>
+                            </tr>
+                            <tr>
+                                <td>87</td>
+                                <td>Falta cartão </td>
+                                <td>Cartão obrigatório na transação</td>
+                            </tr>
+                            <tr>
+                                <td>91</td>
+                                <td>Refaça transação </td>
+                                <td>Instituição temporariamente fora de operação</td>
+                            </tr>
+                            <tr>
+                                <td>M7</td>
+                                <td>IPTE inválido </td>
+                                <td>Códido IPTE inválido</td>
+                            </tr>
+                            <tr>
+                                <td>M9</td>
+                                <td>Refaça transação </td>
+                                <td>Data inválida </td>
+                            </tr>
+                            <tr>
+                                <td>N0</td>
+                                <td>Refaça transação </td>
+                                <td>Mac inválido </td>
+                            </tr>
+                            <tr>
+                                <td>N1</td>
+                                <td>Refaça transação </td>
+                                <td>Dados inválidos </td>
+                            </tr>
+                            <tr>
+                                <td>N2</td>
+                                <td>Refaça transação </td>
+                                <td>Código de processamento inválido </td>
+                            </tr>
+                            <tr>
+                                <td>N3</td>
+                                <td>Transação cancelada </td>
+                                <td>Transação cancelada </td>
+                            </tr>
+                            <tr>
+                                <td>N4</td>
+                                <td>Pagamento inválido </td>
+                                <td>Empresa credora inválida </td>
+                            </tr>
+                            <tr>
+                                <td>N5</td>
+                                <td> C.B inválido </td>
+                                <td>Código de barras inválido </td>
+                            </tr>
+                            <tr>
+                                <td>N9</td>
+                                <td>Refaça transação </td>
+                                <td> NSU repetido </td>
+                            </tr>
                             </tr>
                         </tbody>
                     </table>
@@ -165,155 +334,19 @@
     <!--Valores-->
     <section class="sec sec2">
 
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Nossos Valores</h3>
-            </div>
-        </div>
-        <div class="wrapper values mxw800p">
-            <ul class="stage">
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Espiritualidade: Amar a Deus sobre todas as coisas e ao próximo como a si mesmo.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Ética: Todas as nossas condutas são pautadas pelos princípios morais de integridade,
-                                honestidade, justiça, transparência e senso de responsabilidade, com foco permanente na
-                                sustentabilidade.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Família: Agimos como uma família unida, que trabalha de forma integrada e solidária, se
-                                tratando com respeito e confiança em clima de alegria e amizade fraterna.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Inovação: Constantemente, buscamos ter atitude e coragem para ousar, sabedoria para
-                                inovar e fazer melhor a cada dia.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Resultado: Trabalhamos para atingir as nossas metas e construir parcerias sólidas. Com
-                                foco na prevenção e redução das perdas, dos custos e despesas, celebrando com a equipe
-                                os bons resultados, com a prática da meritocracia.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="scene">
-                    <div class="movie">
-                        <div class="poster"></div>
-                        <div class="info">
-                            <header class="headerValues">
-                            </header>
-                            <p>
-                                Valorização do cliente interno e externo: Buscamos atender e superar as expectativas dos
-                                nossos clientes(Interno e Externo) e dos Fornecedores. Para isso, firmamos o compromisso
-                                de respeito nas relações em valorizar; reconhecer, motivar e capacitar nossos
-                                colaboradores
-                            </p>
-                        </div>
-                    </div>
-                </li>
 
-            </ul>
-        </div>
 
     </section><!--Fim dos valores-->
 
+
     <!--Informação-->
-    <section class="sec infor" id="infor">
-        <div class="content">
-            <div class="mxw800p">
-                <h3>Informações</h3>
-
-                <span><img src="./assets/img/linuximg.png" alt="linux logo"></span>
-
-            </div>
-
-            <div class="inforBox mxw800p">
-                <div class="box">
-                    <h2>Linux</h2>
-                    <p>Migrar os computadores de uma empresa para o sistema operacional Linux pode trazer
-                        diversos benefícios.
-
-                        O Linux é um sistema operacional de código aberto e gratuito, o que significa que não é
-                        necessário pagar licenças de uso. Além disso, é considerado mais seguro e estável em comparação
-                        com outros sistemas operacionais.
-
-                        A migração para o Linux também pode aumentar a produtividade, pois oferece diversas ferramentas
-                        gratuitas de software que podem ser usadas para diversas tarefas. Além disso, a personalização
-                        do sistema operacional é mais fácil e pode ser ajustada para as necessidades específicas da
-                        empresa.
-
-                        Outra vantagem é que o Linux tem uma grande comunidade de desenvolvedores que estão
-                        constantemente atualizando e melhorando o sistema operacional. Isso significa que a empresa pode
-                        ter acesso a novas funcionalidades e correções de segurança regularmente. Em resumo, migrar para
-                        o Linux pode oferecer à empresa um sistema operacional mais seguro, estável, produtivo e
-                        econômico, com a possibilidade de personalização e atualizações regulares.
-                        Ao contrário do que muitos pensam, o Sistema Operacional LINUX é uma ótima alternativa para se
-                        ter no computador, basta escolher uma disdibuição e aproveitar.
-
-                        Veja algumas empresas que utilizam linux:<br /><br />
-
-                        Banco do Brasil<br />
-                        Casas Bahia<br />
-                        Petrobrás<br />
-                        Lojas Colombo<br />
-                        Lojas Renner<br />
-                        Google<br />
-                        Facebook<br />
-                        Amazom<br />
-                        NASA<br />
-                        Dentre outras.<br /><br />
-
-                        Para se ter uma idéia, so em as Casas Bahia adotar o linux em suas lojas houve uma redução de
-                        custo de mais de R$ 13 milhões.</p>
-                </div>
-            </div>
-        </div>
+    <section class="sec container infor">
+           
     </section><!--Fim da Informação-->
 
     <!--Nóticias-->
     <section class="sec news" id="news">
+
         <div class="content">
             <div class="mxw800p">
                 <h3>Últimas notícias</h3>

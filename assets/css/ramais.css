@@ -95,7 +95,7 @@ Estiliza o texto em cada div
 .rb-close {
 	position: absolute;
 	top: 0.4em;
-	right: 0.4em;
+	right: 1em;
 	width: 2em;
 	height: 2em;
 	text-indent: -9000px;
