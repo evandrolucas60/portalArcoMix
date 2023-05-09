@@ -12,6 +12,8 @@
     <!--Css Stylesheet-->
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/ramais.css">
+    <link rel="stylesheet" href="./assets/css/icon.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -23,6 +25,8 @@
 
     <!-- Importando a biblioteca SheetJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+
+    <script src="./assets/js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -331,17 +335,112 @@
         </div>
     </section><!--Fim do erros do SiTef-->
 
-    <!--Valores-->
-    <section class="sec sec2">
 
+    <section class="sec">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Transações PIX</h3>
 
+                <p>O Arco Mix está apto a receber pagamentos via PIX, 24 horas por dia e os 07 dias da semana. O pix no
+                    PDV funciona com QrCode no monitor e no Delivery/e-Commerce funciona através do comparMlhamento da
+                    chave pix. Este processo já está funcionando normalmente no PDV e Delivery/e-Commerce.
+                </p>
 
-    </section><!--Fim dos valores-->
+                <p>Abaixo descrevo os procedimentos a serem executados, somente, nos casos específicos descritos nos
+                    itens 1 e 2 em transações via PIX nas lojas, em especial, nos finais de semanas e feriados.
+                </p>
+            </div>
+            <div>
+                <ul id="rb-grid" class="rb-grid clearfix">
+                    <li class="icon-clima-1 rb-span-2">
+                        <h3>PIX PDV</h3><span class="rb-temp">Executado em casos de instabilidade do sistema nacional
+                            financeiro</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">PIX PDV</span><span class="icon-clima-1"><img
+                                            src="./assets/img/pix.png" alt="" width="128px"></span>
+                                </div>
+                                <div class="phoneNumbers">
+                                    <ul style="padding: 10px">
+                                            <p>
+                                                <strong>a.</strong> Se a compra não foi autorizada no PDV, mas debitou do cliente;
+                                            </p>
+                                            <p>
+                                                <strong>b.</strong> A operadora deverá chamar a fiscal para confirmar se
+                                                o débito ocorreu na conta do cliente, solicitando ao mesmo que verifique através do aplicaMvo do banco oucarteira digital;
+                                            </p>
+                                            <p>
+                                                <strong>c.</strong> Se confirmado o débito na conta do cliente: a fiscal deverá solicitar ao cliente que faça um segundo acesso no aplicaMvo, após 3 minutos, para confirmar se o débito ainda existe em sua conta;
+                                            </p>
+                                            <p>
+                                                <strong>d.</strong> Solicitar ao cliente que envie o comprovante para o celular da loja;
+                                            </p>
+                                            <p>
+                                                <strong>e.</strong> Após conferência da fiscal e confirmação do débito ainda presente na conta do cliente: pode ser registrada a compra na forma de pagamento POS para finalizar a venda e liberar o cliente;
+                                            </p>
+                                            <p>
+                                                <strong>f.</strong> Deverá ser enviado ao financeiro o omprovante do débito do cliente e uma CI, ambas assinadas pela fiscal, informando que foi uma venda no PIX e que ocorreu instabilidade do sistema.
+                                            </p>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="icon-clima-2 rb-span-2">
+                        <h3>PIX chave Itaú</h3><span class="rb-temp">(Delivery/e-Commerce)</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">PIX chave Itaú</span><span class="icon-clima-2"><img
+                                            src="./assets/img/banco.png" alt="" width="128px"></span>
+                                </div>
+                                <div class="phoneNumbers">
+                                    <ul style="padding: 10px">
+                                        
+                                            <p><strong>2. PIX chave Itaú (Delivery/e-Commerce)</strong></p>
+                                            <div class="pix">
+                                                <p><strong>a.</strong> Passar a seguinte chave PIX para o cliente:
+                                                    <i>pixitau@arcomix.com.br</i></p>
+                                                <p><strong>b.</strong> Aos sábados, domingos e feriados:</p>
+                                                <p>&nbsp;&nbsp;&nbsp; i. Após a efetivação do PIX pelo cliente:
+                                                    solicitar o envio do comprovante do
+                                                    débito na conta do cliente para o celular do Delivery/e-Commerce;
+                                                </p>
+                                                <p>&nbsp;&nbsp;&nbsp; ii. Após confirmação da equipe delivery/e-Commerce
+                                                    do débito na conta do cliente:
+                                                    registrar a compra na forma de pagamento POS;</p>
+                                                <p><strong>c.</strong> De segunda a quinta até as 17:30 e na sexta-feira
+                                                    até as 16:30:</p>
+                                                <p>&nbsp;&nbsp;&nbsp; i. Após a efeMvação do PIX pelo cliente: solicitar
+                                                    confirmação do depósito ao
+                                                    departamento financeiro;</p>
+                                                <p>&nbsp;&nbsp;&nbsp; ii. Após confirmação do crédito pelo departamento
+                                                    financeiro: registrar a compra
+                                                    na forma de pagamento POS;</p>
+                                                <p><strong>d.</strong> Deverá ser enviado ao financeiro o comprovante do
+                                                    débito do cliente e uma CI,
+                                                    ambas assinadas pela encarregada do Delivery/e-Commerce, informando
+                                                    que foi uma venda no PIX;</p>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section><!--Fim Ramais-->
+
+   
 
 
     <!--Informação-->
-    <section class="sec container infor">
-           
+    <section class="">
+
     </section><!--Fim da Informação-->
 
     <!--Nóticias-->
@@ -455,6 +554,15 @@
     </section><!-- Fim do Contato-->
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/pagetransition.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./assets/js/jquery.fittext.js"></script>
+    <script src="./assets/js/boxgrid.js"></script>
+    <script>
+        $(function () {
+            Boxgrid.init();
+        });
+    </script>
 </body>
 
 </html>

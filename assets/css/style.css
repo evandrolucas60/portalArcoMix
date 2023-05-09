@@ -33,6 +33,7 @@ BANNER
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .banner h2 {
@@ -53,7 +54,7 @@ BEM-VINDO
 .sec {
     background:#fff;
     padding: 100px;
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
