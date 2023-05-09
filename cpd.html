@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.I | Arco-Mix</title>
+    <!--Favicon-->
+    <link rel="icon" href="./assets/img/favicon.png">
+
+    <!--Css Stylesheet-->
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/ramais.css">
+    <link rel="stylesheet" href="./assets/css/icon.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Importando o DataTables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <!-- Importando a biblioteca SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+
+    <script src="./assets/js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="topnav" id="topnav">
+        <a href="./index.html" class="logo"><img src="./assets/img/header-logo.png" alt="Arco-Mix" width="100px"></a>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+
+                <input type="checkbox" class="checkbox" onclick="toggle()" />
+
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+
+                <ul class="menu-nav" id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./ramais.html">Ramais</a></li>
+                    <li><a href="./cpd.html">CPD</a></li>
+                    <li><a href="./frenteDeLoja.html">Loja</a></li>
+                    <li><a href="./centralColaborativa.html">Central</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Fim do cabeçalho-->
+
+    <!--banner-->
+    <section class="banner">
+        <h2><span>CPD</span></h2>
+    </section><!--Fim do banner-->
+
+    <!--Bem-vindo-->
+    <section class="sec">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>CPD</h3>
+                <p>
+                    Tutoriais, dicas, procedimentos, não importa como você chama, aqui você aprende. Esta sessão é uma
+                    oportunidade para você expandir seus conhecimentos e habilidades em diversas áreas relacionadas à
+                    tecnologia da informação e comunicação.
+                </p>
+
+                <p>
+                    Nosso objetivo é fornecer a você informações relevantes e atualizadas para que você possa
+                    desenvolver suas habilidades profissionais e estar sempre preparado para as demandas do mercado de
+                    trabalho.
+                </p>
+
+                <p>
+                    Estamos à disposição para ajudá-lo em tudo o que você precisar. Não hesite em entrar em contato
+                    conosco se tiver alguma dúvida ou sugestão.
+                    Esperamos que você aproveite ao máximo esta sessão e que ela seja uma experiência enriquecedora para
+                    você!
+                </p>
+            </div>
+        </div>
+    </section><!--fim do benm-vindo-->
+
+    <section class="sec">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Dicionário da T.I</h3>
+
+                <p> VNC-> (Virtual Network Computing) é um protocolo de internet que permite a visualização de
+                    interfaces gráficas remotas através de uma conexão segura. Trocando em miúdos, você pode ver e
+                    acessar todo o conteúdo de outro computador remotamente, através da internet.<br>
+
+                    <a href="./assets/archives/visualizando o VNC.pdf" target="_blank" class="btn">Como ver o VNC?</a>
+                </p>
+
+
+                <p><br><br></p>
+                <p>I.P->(Protocolo da Internet) é usado para duas coisas: descreve os protocolos de comunicação entre
+                    dispositivos, dentre os quais existem os modelos TCP/IP e /OSI, e também é o número de identificação
+                    de um dispositivo conectado à internet.
+
+                    No nosso caso, é o numero do VNC.<br>
+
+                    <a href="./assets/archives/IP das maquinas.pdf" target="_blank" class="btn">Como ver o IP?</a>
+                </p>
+
+
+            </div>
+            <div>
+                <ul id="rb-grid" class="rb-grid clearfix">
+                    <li class="icon-clima-1 rb-span-2">
+                        <h3>PIX PDV</h3><span class="rb-temp">Executado em casos de instabilidade do sistema nacional
+                            financeiro</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">PIX PDV</span><span class="icon-clima-1"><img
+                                            src="./assets/img/pix.png" alt="" width="128px"></span>
+                                </div>
+                                <div class="phoneNumbers">
+                                    <ul style="padding: 10px">
+                                        <p>
+                                            <strong>a.</strong> Se a compra não foi autorizada no PDV, mas debitou do
+                                            cliente;
+                                        </p>
+                                        <p>
+                                            <strong>b.</strong> A operadora deverá chamar a fiscal para confirmar se
+                                            o débito ocorreu na conta do cliente, solicitando ao mesmo que verifique
+                                            através do aplicaMvo do banco oucarteira digital;
+                                        </p>
+                                        <p>
+                                            <strong>c.</strong> Se confirmado o débito na conta do cliente: a fiscal
+                                            deverá solicitar ao cliente que faça um segundo acesso no aplicaMvo, após 3
+                                            minutos, para confirmar se o débito ainda existe em sua conta;
+                                        </p>
+                                        <p>
+                                            <strong>d.</strong> Solicitar ao cliente que envie o comprovante para o
+                                            celular da loja;
+                                        </p>
+                                        <p>
+                                            <strong>e.</strong> Após conferência da fiscal e confirmação do débito ainda
+                                            presente na conta do cliente: pode ser registrada a compra na forma de
+                                            pagamento POS para finalizar a venda e liberar o cliente;
+                                        </p>
+                                        <p>
+                                            <strong>f.</strong> Deverá ser enviado ao financeiro o omprovante do débito
+                                            do cliente e uma CI, ambas assinadas pela fiscal, informando que foi uma
+                                            venda no PIX e que ocorreu instabilidade do sistema.
+                                        </p>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="icon-clima-2 rb-span-2">
+                        <h3>PIX chave Itaú</h3><span class="rb-temp">(Delivery/e-Commerce)</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">PIX chave Itaú</span><span class="icon-clima-2"><img
+                                            src="./assets/img/banco.png" alt="" width="128px"></span>
+                                </div>
+                                <div class="phoneNumbers">
+                                    <ul style="padding: 10px">
+
+                                        <p><strong>2. PIX chave Itaú (Delivery/e-Commerce)</strong></p>
+
+                                        <p><strong>a.</strong> Passar a seguinte chave PIX para o cliente:
+                                            <i>pixitau@arcomix.com.br</i>
+                                        </p>
+                                        <p><strong>b.</strong> Aos sábados, domingos e feriados:</p>
+                                        <p>&nbsp;&nbsp;&nbsp; i. Após a efetivação do PIX pelo cliente:
+                                            solicitar o envio do comprovante do
+                                            débito na conta do cliente para o celular do Delivery/e-Commerce;
+                                        </p>
+                                        <p>&nbsp;&nbsp;&nbsp; ii. Após confirmação da equipe delivery/e-Commerce
+                                            do débito na conta do cliente:
+                                            registrar a compra na forma de pagamento POS;</p>
+                                        <p><strong>c.</strong> De segunda a quinta até as 17:30 e na sexta-feira
+                                            até as 16:30:</p>
+                                        <p>&nbsp;&nbsp;&nbsp; i. Após a efeMvação do PIX pelo cliente: solicitar
+                                            confirmação do depósito ao
+                                            departamento financeiro;</p>
+                                        <p>&nbsp;&nbsp;&nbsp; ii. Após confirmação do crédito pelo departamento
+                                            financeiro: registrar a compra
+                                            na forma de pagamento POS;</p>
+                                        <p><strong>d.</strong> Deverá ser enviado ao financeiro o comprovante do
+                                            débito do cliente e uma CI,
+                                            ambas assinadas pela encarregada do Delivery/e-Commerce, informando
+                                            que foi uma venda no PIX;</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section><!--Fim Ramais-->
+
+   
+
+    <!--Contato-->
+    <section class="sec contact" id="contact">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Fale conosco</h3>
+            </div>
+            <div class="contactForm">
+                <form action="" method="POST">
+                    <div class="row100">
+                        <div class="inputBx50">
+                            <input type="text" placeholder="Nome Completo" id="name" required>
+                        </div>
+                        <div class="inputBx50">
+                            <input type="text" placeholder="Email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input placeholder="Assunto" id="subject" required>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <textarea placeholder="Mensagem" id="message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sci">
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="copyrightContainer">
+                <p class="copyright">Desingn & Developed by <a href="#">Equipe T.I Arcomix</a></p>
+            </div>
+        </div>
+    </section><!-- Fim do Contato-->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/pagetransition.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./assets/js/jquery.fittext.js"></script>
+    <script src="./assets/js/boxgrid.js"></script>
+    <script>
+        $(function () {
+            Boxgrid.init();
+        });
+    </script>
+</body>
+
+</html>

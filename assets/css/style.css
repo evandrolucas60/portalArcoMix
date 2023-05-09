@@ -21,13 +21,15 @@ BANNER
 .slide-main{
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    min-height: 50vh;
+    align-self: center;
+    margin-bottom: 15px;
 }
 
 .banner {
     position: relative;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     background: url(../img/banner.jpg);
     background-size: cover;
     display: flex;
@@ -98,6 +100,11 @@ p.hide {
     text-decoration: none;
     color: #fff;
     margin-top: 40px;
+}
+
+.btn-white {
+    background: #fff;
+    color: #000;
 }
 
 /***********************************
@@ -402,7 +409,7 @@ VALORES
 
   
 /***********************************
-INFORMAÇÕES
+stats
 ************************************/
 .stats {
     background: #000;

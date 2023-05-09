@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Equipe T.I</title>
+
+    <!--Css Stylesheet-->
+	<link rel="icon" href="./assets/img/favicon.png">
+	<link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+     <!-- Importando o DataTables -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+ 
+     <!-- Importando a biblioteca SheetJS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+</head>
+
+<body>
+	<!--Cabeçalho-->
+	<header class="topnav" id="topnav">
+		<a href="./index.html" class="logo"><img src="./assets/img/header-logo.png" alt="Arco-Mix" width="100px"></a>
+
+		<nav role="navigation">
+			<div id="menuToggle">
+
+				<input type="checkbox" class="checkbox" onclick="toggle()" />
+
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+
+				<ul class="menu-nav" id="menu">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./ramais.html">Ramais</a></li>
+					<li><a href="#">Info</a></li>
+					<li><a href="#">CPD</a></li>
+					<li><a href="#">Loja</a></li>
+					<li><a href="#">Central</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<!--banner-->
+    <section class="banner">
+        <h2><br /><span>Parque de Máquinas</span><br></h2>
+    </section><!--Fim do banner-->
+
+    <!--Bem-vindo-->
+    <section class="sec">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Parque de máquinas</h3>
+                <p>
+                    Bem-vindo à sessão do nosso Parque de Máquinas! Aqui é onde você pode conhecer as ferramentas e equipamentos que usamos para produzir nossos produtos e prestar serviços de qualidade aos nossos clientes.
+                </p>
+            </div>
+        </div>
+    </section><!--fim do benm-vindo-->
+
+     <!--Parque de máquinas-->
+     <section class="sec escalaServico" id="escalaServico">
+        <div class="content">
+            <div>
+                <h3>levantamento do parque de máquinas</h3>
+                <div id="tabela" class="tabela">
+                </div>
+            </div>
+        </div>
+    </section><!--Parque de máquinas-->
+
+	  <!--Contato-->
+	  <section class="sec contact" id="contact">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Fale conosco</h3>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <div class="row100">
+                        <div class="inputBx50">
+                            <input type="text" placeholder="Nome Completo">
+                        </div>
+                        <div class="inputBx50">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <textarea placeholder="Messagem"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sci">
+                <ul>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+            </div>
+            <p class="copyright">Desingn & Developed by <a href="#">Equipe T.I Arcomix</a></p>
+        </div>
+    </section><!-- Fim do Contato-->
+
+	<script src="./assets/js/script.js"></script>
+    <script src="./assets/js/InputPath2.js"></script>
+</body>
+
+</html>
