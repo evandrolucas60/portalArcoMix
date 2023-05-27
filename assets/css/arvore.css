@@ -122,7 +122,7 @@
 
 .cs-style-1 .figcaption {
 	height: 100%;
-	width: 100%;
+	width: 200%;
 	opacity: 0;
 	text-align: center;
 	backface-visibility: hidden;
@@ -133,7 +133,7 @@
 .cs-style-1 .member:hover .figcaption,
 .cs-style-1 .member.cs-hover .figcaption {
 	opacity: 1;
-	transform: translate(15px, 15px);
+	transform: translate(50px, 15px);
 }
 
 
@@ -149,6 +149,8 @@
 .cs-style-1 .figcaption a {
 	margin-top: 30px;
 }
+
+
 
 
 @media screen and (max-width: 31.5em) {
