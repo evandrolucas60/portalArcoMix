@@ -591,9 +591,12 @@ CONTATO
 .sci ul li a:hover img {
     opacity: 0.5;
 }
-
+.copyright{
+    text-align: center;
+}
 .copyright a {
     color: #fff;
+    text-decoration: none;
 } 
 
 /**************************
