@@ -1,0 +1,11 @@
+@charset "UTF-8"
+/*Estilo impressora*/
+* {
+    margin: 5px;
+}
+.impressora {
+    display: none;
+}
+footer {
+    display: none;
+}
