@@ -114,7 +114,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	padding: 2px;
 	background: #2779a7;
 	color: #ed4e6e;
 }
@@ -133,7 +133,7 @@
 .cs-style-1 .member:hover .figcaption,
 .cs-style-1 .member.cs-hover .figcaption {
 	opacity: 1;
-	transform: translate(50px, 15px);
+	transform: translate(30px, 10px);
 }
 
 

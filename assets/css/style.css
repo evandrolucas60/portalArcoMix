@@ -473,6 +473,10 @@ NOTÍCIAS
     align-items: center;
 }
 
+.newsBx .mancht img {
+    width: 200px;
+}
+
 .newsBx .mancht:hover {
     background: #000;
 }
