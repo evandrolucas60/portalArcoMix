@@ -104,7 +104,7 @@ p.hide {
     background: #000;
     text-decoration: none;
     color: #fff;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .btn-white {
@@ -586,6 +586,7 @@ CONTATO
     text-decoration: none;
     display: inline-block;
     margin: 0 30px;
+    color: #000;
 }
 
 .sci ul li a img {
@@ -630,7 +631,7 @@ RESPONSIVIDADE
     }
 
     h3 {
-        font-size: 3.8em;
+        font-size: 2.5em;
     }
 
     p,
@@ -673,7 +674,7 @@ RESPONSIVIDADE
     }
     
     h3 {
-        font-size: 4.2em;
+        font-size: 3.2em;
     }
 
     p,
@@ -718,7 +719,7 @@ RESPONSIVIDADE
     }
     
     h3 {
-        font-size: 4.4em;
+        font-size: 3.4em;
     }
 
     p,
@@ -758,7 +759,7 @@ RESPONSIVIDADE
     }
    
     h3 {
-        font-size: 1.8em;
+        font-size: 3.6em;
     }
 
     p,
@@ -788,7 +789,7 @@ RESPONSIVIDADE
     }
 
     h3 {
-        font-size: 2em;
+        font-size: 3.7em;
     }
 
     p,
