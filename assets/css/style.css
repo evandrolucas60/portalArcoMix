@@ -35,7 +35,6 @@ BANNER
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
 }
 
 .banner h2 {
@@ -84,6 +83,12 @@ h2 {
     margin: 40px;
 }
 
+h6 {
+    margin: 5px;
+    font-weight: 200;
+    filter: invert();
+}
+
 p {
     position: relative;
     font-size: 18px;
@@ -104,13 +109,29 @@ p.hide {
     background: #000;
     text-decoration: none;
     color: #fff;
-    margin-top: 80px;
+    margin-top: 5px;
 }
 
 .btn-white {
     background: #fff;
     color: #000;
 }
+
+/***********************************
+Pdv Imagem
+************************************/
+
+.pdvImage img:nth-child(2) {
+    display: none;
+  }
+  
+  .pdvImage:hover img:nth-child(1) {
+    display: none;
+  }
+  
+  .pdvImage:hover img:nth-child(2) {
+    display: inline-block;
+  }
 
 /***********************************
 ESCALA DE SERVIÇO

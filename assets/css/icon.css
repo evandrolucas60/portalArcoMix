@@ -3,3 +3,8 @@
     background: url(../img/telefone-fixo.png) no-repeat center;
     background-size: contain;
 }
+
+.iconLocation {
+    background: url(../img/map-pointer.png) no-repeat center;
+    background-size: contain;
+}

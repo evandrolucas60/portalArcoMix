@@ -10,6 +10,11 @@ function toggle() {
         header.classList.toggle('active');
     } else {
         header.classList.remove('active');
-    }
-    
+    } 
 }
+
+
+window.addEventListener('load', () => {
+    let header_profile = document.querySelector("#topnav-profile");
+        header_profile.classList.toggle('sticky');
+} )
