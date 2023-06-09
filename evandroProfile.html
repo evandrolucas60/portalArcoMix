@@ -11,6 +11,18 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/profile.css">
 	<script type="text/javascript" src="./assets/js/modernizr.custom.79639.js"></script> 
+
+    <style>
+    .ch-img-1 { 
+	    background-image: url(./assets/img/team/profile/12.png);
+        background-size: cover;
+	    z-index: 12;
+    }
+
+    .ch-info {
+	background: #f16729 url(./assets/img/fabric.png);
+    }
+    </style>
 </head>
 
 <body>
@@ -41,28 +53,40 @@
     </header>
     <!--Fim do cabeçalho-->
 
-    
-
     <!--Profile-->
     <main class="profile_layout">
-        <pre class="ascii">
-            <img src="./assets/img/team/profile/12.png" alt="" style="--color:#3277b5">
-		</pre>
-		<dl class="content2">
-			<dt>Nome</dt>
-			<dd>Evandro Lucas</dd>
-			<dt>Cargo</dt>
-			<dd>Estagiário</dd>
-			<dt>Atribuições</dt>
-			<dd>
-                <ul>
-                    <li>AUXILIAR NO DESENVOLVIMENTO DE SISTEMAS INFORMATIZADOS;</li>
-                    <li>DIMENSIONANDO REQUISITOS E FUNCIONALIDADE;</li>
-                    <li>AUXILIAR NA REALIZAÇÃO DE CODIFICAÇÃO DE APLICAÇÕES PARA A ESPECIFICAÇÃO
-                        DE PROGRAMAS DA ARQUITETURA E DAS FERRAMENTAS;</li>
-                </ul>
-                </dd>
-		</dl>
+        
+        <ul class="ch-grid">
+            <li>
+                <div class="ch-item">	
+                    <div class="ch-info">
+                        <h3>Evandro Lucas</h3>
+                        <p>ASP.NET MVC | .NET Core | Azure | Java<br></p>
+                        <p><a href=""><img src="./assets/img/linkedin.png" alt="" width="25px"></a><a href=""><img src="./assets/img/github.png" alt="" width="25px"></a></p>
+                        <p><a class="anchor" href="./team.html">voltar</a></p>               
+                    </div>
+                    <div class="ch-thumb ch-img-1"></div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="content2">
+            <dl>
+                <dt>Nome</dt>
+                <dd>Evandro Lucas</dd>
+                <dt>Cargo</dt>
+                <dd>Estagiário</dd>
+                <dt>Atribuições</dt>
+                <dd>
+                    <ul>
+                        <li>AUXILIAR NO DESENVOLVIMENTO DE SISTEMAS INFORMATIZADOS;</li>
+                        <li>DIMENSIONANDO REQUISITOS E FUNCIONALIDADE;</li>
+                        <li>AUXILIAR NA REALIZAÇÃO DE CODIFICAÇÃO DE APLICAÇÕES PARA A ESPECIFICAÇÃO
+                            DE PROGRAMAS DA ARQUITETURA E DAS FERRAMENTAS;</li>
+                    </ul>
+                    </dd>
+            </dl>
+        </div>
 	</main>
     <!--Fim do Profile-->
 
