@@ -1,29 +1,72 @@
 .profile_layout {
 	position: relative;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 30px;
     max-width: 100%;
-    padding: 80px;
-	height: 100vh;
-	background: url(../img/egg_shell.jpg);
+	margin-top: 60px;
+}
+.content2 {
+	text-align: center;
+	margin-bottom: 50px;
 }
 
-.profile_layout .content2 {
+.infoBx {
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+}
+
+.infoBx .infoItem {
+    position: relative;
+    background: #4978ff;
     min-height: 300px;
-    width: 600px;
-    margin: 0 auto;
+    width: 350px;
+    margin: 15px auto;
     display: flex;
-	justify-content: center;
+    justify-content: center;
     align-items: center;
+}
+
+.infoBx div:nth-child(1){
+	background: url(../img/fabric.png);
+	background-color: #ea2a29;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.infoBx div:nth-child(2){
+	background: url(../img/fabric.png);
+	background-color: #f16729;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.infoBx div:nth-child(3){
+	background: url(../img/fabric.png);
+	background-color: #f89322;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.infoBx div:nth-child(4){
+	background: url(../img/fabric.png);
+	background-color: #ffcf14;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.icoImg img {
+	width: 80px;
+	margin-bottom: 25px;
 }
 
 dt {
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1.8em;
+	margin-top: 30px;
 }
 
 dd {
-	font-size: 1em;
-	margin: 15px;
+	font-size: 1.2em;
+	margin: 5px;
 }
 
 .ch-grid {
@@ -61,6 +104,7 @@ dd {
 	position: relative;
 	cursor: default;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	column-span: 2;
 }
 
 .ch-thumb {
