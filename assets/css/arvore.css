@@ -130,12 +130,11 @@
     z-index: 6;
 }
 
-.cs-style-1 .member:hover .figcaption,
-.cs-style-1 .member.cs-hover .figcaption {
+.cs-style-1 .icoImg:hover .figcaption,
+.cs-style-1 .icoImg.cs-hover .figcaption {
 	opacity: 1;
 	transform: translate(30px, 10px);
 }
-
 
 
 .cs-style-1 .figcaption h2 {

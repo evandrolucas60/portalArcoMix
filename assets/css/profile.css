@@ -1,10 +1,20 @@
 .profile_layout {
 	position: relative;
+	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 30px;
+	align-self:center;
     max-width: 100%;
 	margin-top: 60px;
 }
+
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
 .content2 {
 	text-align: center;
 	margin-bottom: 50px;
@@ -53,21 +63,57 @@
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
 }
 
+.icoImg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .icoImg img {
 	width: 80px;
 	margin-bottom: 25px;
 }
 
-dt {
-	font-weight: bold;
-	font-size: 1.8em;
+.grid .figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 2px;
+	background: #000;
+	color: #fff;
+}
+
+
+.cs-style-1 .figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	backface-visibility: hidden;
+	transition: transform 0.3s, opacity 0.3s;
+    z-index: 6;
+}
+
+.cs-style-1 .icoImg:hover .figcaption,
+.cs-style-1 .icoImg.cs-hover .figcaption {
+	opacity: 1;
+	transform: translate(30px, 10px);
+}
+
+
+.cs-style-1 .figcaption h2 {
 	margin-top: 30px;
 }
 
-dd {
-	font-size: 1.2em;
-	margin: 5px;
+.cs-style-1 .figcaption span {
+	display: block;
 }
+
+.cs-style-1 .figcaption a {
+	margin-top: 30px;
+}
+
 
 .ch-grid {
 	margin: 20px 0 0 0;
@@ -216,10 +262,22 @@ dd {
 	transform: translateX(0px) rotate(0deg);
 }
 
+/***********************************
+Tipografia
+************************************/
+h2 {
+	margin: 0;
+}
+h4 {
+	font-size: 1.5em;
+	font-weight: 100;
+	color: #fff;
+	text-align: center;
+}
+
 
 @media screen and (min-width: 53em) {
 	.content {
 		grid-template-columns: 15ch 1fr;
 	}
 }
-
